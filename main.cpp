@@ -1,3 +1,6 @@
+#include <iostream>
+
+using namespace std;
 // Maks
 // I will add testing function later
 // "Standart choice"
