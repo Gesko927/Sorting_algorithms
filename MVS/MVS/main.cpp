@@ -29,3 +29,31 @@ void BSort(T array[], long size)
 		flag = true;
 	}
 }
+
+// Modification of "boat" sorting
+template <typename T>
+void BSort2(T array[], long size) // size - size of array
+{
+	long i, rezerv;				//i - counter for array, rezerv - for saving counter pisition
+	T temp;						//temp - for swap
+	i = 0;
+
+	while (i < size - 1)
+	{
+		if (array[i] > array[i + 1]) // compare
+		{
+			rezerv = i + 1;			// save counter position
+			while ((i >= 0) && (array[i] > array[i + 1]))  // swap while..
+			{
+				temp = array[i];
+				array[i] = array[i + 1];
+				array[i + 1] = temp;
+
+				i--;				// compare elements behind 'i'
+			}
+			i = rezerv;				// return 'i' on position
+		}
+		else
+			i++;					// next elements
+	}
+}
