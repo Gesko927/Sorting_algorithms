@@ -180,5 +180,15 @@ void PrintArray(T array[], long size)
 				cout << endl;
 			cout << setw(15) << array[i];
 		}
+		cout << endl;
 	}
+}
+
+inline void line(char c, int n)
+{
+	for (int i(0); i < n; ++i)
+	{
+		cout << c;
+	}
+	cout << endl;
 }
