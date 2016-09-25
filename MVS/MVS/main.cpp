@@ -60,7 +60,8 @@ void main()
 			return;
 		} break;
 	}
-	
+
+	PrintArray(Array, N);
 
 	float start_time = clock();
 
@@ -78,9 +79,12 @@ void main()
 	}
 	
 	float end_time = clock();
+
+	PrintArray(Array, N);
+
 	float search_time = end_time - start_time;
 
-	cout << "Chas sortuvannya: " << search_time / CLOCKS_PER_SEC << "\n";
+	cout << "\nChas sortuvannya: " << search_time / CLOCKS_PER_SEC << "\n";
 	
 	system("pause>>void");
 }
