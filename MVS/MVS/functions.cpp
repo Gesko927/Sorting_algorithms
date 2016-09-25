@@ -75,6 +75,48 @@ void InsertionSort(int *arrayPtr, int length) // Insertion sort
 		}
 	}
 }
+//-----------------------------------------------------------------------------------------------------
+//Andriy Datskiv
+//Quick Sort
+template <typename T>
+void QSort(T array[], long first, long last)
+{
+	if (first < last)//compare first element with last 
+	{
+		long i;//vaiables for indexes
+		long j;
+		T temp;//for swap
+		T point;
+
+		point = array[first];//fixed element of array
+
+		i = first;//left end of array
+		j = last;//right end of array
+
+		while (i < j)
+		{
+			while (array[i] <= point && i < last)
+				i++;
+			while (array[j] >= point && j > first)
+				j--;
+
+			if (i < j)//swapping elements
+			{
+				temp = array[i];
+				array[i] = array[j];
+				array[j] = temp;
+			}
+		}
+
+		temp = array[first];
+		array[first] = array[j];
+		array[j] = temp;
+
+		//Recursion QuickSort
+		QSort(array, first, j - 1);
+		QSort(array, j + 1, last);
+	}
+}
 
 // Eugene Roman
 void TEST_ALGORITHM_INSERT_SORTING(void)
