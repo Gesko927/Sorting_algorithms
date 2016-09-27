@@ -1,2 +1,10 @@
-﻿  MVS.vcxproj -> C:\Users\Андрій\OneDrive\GitHub\Sorting_algorithms\MVS\Debug\MVS.exe
-  MVS.vcxproj -> C:\Users\Андрій\OneDrive\GitHub\Sorting_algorithms\MVS\Debug\MVS.pdb (Full PDB)
+﻿  functions.cpp
+  Generating Code...
+  Compiling...
+  main.cpp
+c:\users\андрій\onedrive\github\sorting_algorithms\mvs\mvs\main.cpp(18): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\андрій\onedrive\github\sorting_algorithms\mvs\mvs\main.cpp(96): warning C4244: 'initializing': conversion from 'clock_t' to 'float', possible loss of data
+c:\users\андрій\onedrive\github\sorting_algorithms\mvs\mvs\main.cpp(111): warning C4244: 'initializing': conversion from 'clock_t' to 'float', possible loss of data
+  Generating Code...
+main.obj : error LNK2019: unresolved external symbol "void __cdecl line(char,int)" (?line@@YAXDH@Z) referenced in function _main
+C:\Users\Андрій\OneDrive\GitHub\Sorting_algorithms\MVS\Debug\MVS.exe : fatal error LNK1120: 1 unresolved externals

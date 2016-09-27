@@ -13,7 +13,7 @@ void main()
 
 	char repeat;
 
-	long Array[N];
+	int Array[N];
 
 	srand(time(0));
 
